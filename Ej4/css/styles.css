@@ -1,0 +1,122 @@
+/*
+    CSS para el examen
+
+    colores:
+
+    fondo: #333333;
+    fondo: cajas: #424242;
+    linea: lightgray;
+    boton: #007BFF;
+    boton seleccionado: #0056b3;
+*/
+
+body {
+    width: 90%;
+    margin-left: 5% ;
+    margin-right: 5%;
+    background-color: #333333;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.youtuber, .footer, .header {
+    background-color: #424242;
+    border: 1px solid lightgray;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+
+
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 0px;
+
+
+}
+
+.imageHome{
+    text-align: center;
+    width: 90%;
+    border:black 4px solid;
+    border-radius: 3%;
+    height: auto;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    object-fit: cover;
+
+}
+
+.youtuber .images {
+
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.youtuber h2 {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+.youtuber p {
+    color: white;
+    font-size: 1em;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    border-left: 4px red solid;
+    padding-left: 5px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: red;
+}
+
+
+.button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+@media all and (max-width: 700px) {
+    .youtuber, .footer {
+        border-color: red;
+    }
+    .button {
+        background-color: red;
+    }
+    .button:hover {
+        background-color: darkred;
+    }
+}
