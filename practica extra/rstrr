@@ -1,0 +1,118 @@
+/* Configuración General y Punto 2: Fondo que NO se desplaza */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(images/fondo.jpg);
+    background-attachment: fixed; /* Punto 2 [cite: 69] */
+    background-size: cover;
+    color: white;
+}
+
+/* 1. Menú superior fijo */
+.navbar {
+    position: fixed; /* Punto 1 [cite: 67] */
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 100, 80, 0.9);
+    z-index: 1000;
+    padding: 30px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar li { display: inline; margin: 0 15px; }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 7. Enlaces subrayados al pasar el ratón */
+a:hover {
+    text-decoration: underline; /* Punto 7 [cite: 75] */
+}
+
+/* 2. Título */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* 3. Capa de Cookies */
+.cookie-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    border: 2px solid red;
+    z-index: 2000;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* 4. Zona Central y 5. Menú Lateral */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden; /* Limpia floats */
+}
+
+.info-box {
+    background: rgba(50, 50, 50, 0.9);
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Imágenes flotantes (Punto 4) */
+.image-right img { float: right; margin-left: 20px; width: 150px; }
+.image-left img { float: left; margin-right: 20px; width: 150px; }
+
+/* 5. Menú lateral flotante */
+.sidebar {
+    float: right; /* Punto 5 [cite: 73] */
+    width: 50px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    position: sticky;
+    top: 80px;
+}
+
+.sidebar img { width: 40px; margin-bottom: 10px; cursor: pointer; }
+
+/* 6. Pie de página */
+.footer {
+    clear: both;
+    background: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 8. Responsive Design (Móvil) */
+@media (max-width: 600px) {
+    .sidebar {
+        float: none; /* Punto 8  */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: static;
+    }
+
+    .image-right img, .image-left img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+}

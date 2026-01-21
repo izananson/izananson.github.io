@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatoo ootaT - Práctica Float Extra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Donde estamos</a></li>
+            <li><a href="#">Nuestros trabajos</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Tatoo ootaT</h1>
+        <p>Una empresa muy distinta</p>
+    </header>
+
+    <div id="cookie-banner" class="cookie-overlay">
+        <div class="cookie-content">
+            <h3>Esta web necesita usar cookies</h3>
+            <p>Utilizamos cookies para asegurar la mejor experiencia. Si continúas, aceptamos que estás encantado de recibirlas.</p>
+            <button onclick="document.getElementById('cookie-banner').style.display='none'">Cerrar</button>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="info-box">
+            <div class="image-right">
+                <img src="https://via.placeholder.com/150" alt="Tattoo 1">
+            </div>
+            <div class="text-content">
+                <h2>Tatuajes Modernos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+            </div>
+        </section>
+
+        <section class="info-box">
+            <div class="image-left">
+                <img src="https://via.placeholder.com/150" alt="Tattoo 2">
+            </div>
+            <div class="text-content">
+                <h2>El tatuaje en la cultura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="IG"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="TW"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YT"></a>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tatoo ootaT - Información de la empresa [cite: 74]</p>
+    </footer>
+
+</body>
+</html>
+
+
